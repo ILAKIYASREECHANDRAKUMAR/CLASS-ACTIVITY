@@ -1,7 +1,7 @@
 <html>
 <head>
 <h2>Page1.Html</h2>
-<form action="/action_page.php"> 
+<form>
 Name:<input type="text" name="Name"><br>
 <br>D.O.B:<input type="date" name="d.o.b" max="2019-12-31"></br>
 <br>Photo:<img src="WIN_20161223_12_50_25_Pro.jpg" height="100" width="150"></br>
@@ -12,7 +12,13 @@ Name:<input type="text" name="Name"><br>
 <br>hobbies:<input type="checkbox" name="hobby1" value="hobbies">reading
 <input type="checkbox" name="hobby2" value="hobbies">singing
 <input type="checkbox" name="hobby3" value="hobbies">playing</br>
-<br><p><a href="page2.html">proceed</a>
+<br><p><a href="page2.html">proceed</a><br>
+<button onclick="f1()">pdf</button>
+<script>
+function f1(){
+window.print("page1.pdf");
+}
+</script>
 </form>
 </body>
 </head>
